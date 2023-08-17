@@ -1,0 +1,7 @@
+name: Format Body Field Module
+type: module
+description: Shows a read more or show less option for the body field
+package: Custom Module
+core_version_requirement: ^9 || ^10
+libraries:
+  - js-module/js-body

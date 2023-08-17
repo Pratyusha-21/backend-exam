@@ -1,0 +1,7 @@
+custom_api.example:
+  path: '/products-api'
+  defaults:
+    _title: 'Products API'
+    _controller: '\Drupal\products_api\Controller\ProductsNodeApiController::generateApi'
+  requirements:
+    _permission: 'access content'

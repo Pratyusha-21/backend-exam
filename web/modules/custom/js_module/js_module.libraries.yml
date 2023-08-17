@@ -1,0 +1,7 @@
+js-body:
+  version: 1.x
+  js:
+    js/js-module.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
