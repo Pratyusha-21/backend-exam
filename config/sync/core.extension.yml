@@ -1,7 +1,6 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
-  address: 0
   admin_toolbar: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
@@ -44,11 +43,11 @@ module:
   rest: 0
   search: 0
   serialization: 0
+  shopping: 0
   shortcut: 0
   system: 0
   taxonomy: 0
   text: 0
-  token: 0
   toolbar: 0
   tour: 0
   update: 0

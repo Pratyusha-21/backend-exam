@@ -1,0 +1,5 @@
+name: Shopping Module
+description: Shows a Buy now and add to cart button.
+package: Custom
+type: module
+core_version_requirement: ^9 || ^10
