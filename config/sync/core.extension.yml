@@ -5,6 +5,7 @@ module:
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
   automated_cron: 0
+  basic_auth: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -16,6 +17,8 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -25,6 +28,8 @@ module:
   help: 0
   history: 0
   image: 0
+  js_module: 0
+  jsonapi: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
@@ -34,7 +39,11 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  products_api: 0
+  rest: 0
   search: 0
+  serialization: 0
+  shopping: 0
   shortcut: 0
   system: 0
   taxonomy: 0

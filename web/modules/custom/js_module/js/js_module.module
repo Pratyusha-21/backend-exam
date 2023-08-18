@@ -1,0 +1,7 @@
+<?php
+/**
+ * Implements hook_page_attachments().
+ */
+function menu_api_page_attachments(array &$attachments) {
+    $attachments['#attached']['library'][] = 'js_module/js-body';        
+}

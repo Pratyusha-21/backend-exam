@@ -1,0 +1,5 @@
+name: Products API
+type: module
+description: Api to fetch products node details
+package: Custom Module
+core_version_requirement: ^9 || ^10

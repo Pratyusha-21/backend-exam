@@ -1,0 +1,8 @@
+thank.you:
+  path: '/thank-you'
+  defaults:
+    _controller: '\Drupal\shopping\Controller\ShoppingController::thankYouDetails'
+    _title: 'Shopping Module'
+  requirements:
+    _permission: 'access content'
+    _role: 'customers + administrator + content_admin'

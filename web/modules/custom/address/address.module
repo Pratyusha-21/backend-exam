@@ -1,0 +1,39 @@
+<?php
+/**
+ * Implements hook_form_alter().
+ */
+function address_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $role = \Drupal::currentUser()->getRoles();
+  if ((in_array('customers', $role)) && $form_id == 'user_form') {
+    // Add custom field to the user registration form.
+    $form['address'] = [
+      '#type' => 'textfield',
+      '#title' => t('Enter your address'),
+      '#description' => t('Address to deliver your order.'),
+      '#required' => TRUE,
+    ];
+    $form['actions']['submit']['#submit'][] = 'address_custom_submit';
+  }
+}
+
+/**
+ * Custom submit handler to save the address data.
+ */
+function address_custom_submit($form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  // Get the submitted address value.
+  $address = $form_state->getValue('address');
+  // Get the current user.
+  $user = \Drupal::currentUser();
+  // Update the user's address field.
+  $query = \Drupal::database()->update('users_field_data')
+   ->fields(['address' => $address])
+   ->condition('uid', $user->id());
+  $result = $query->execute();
+  dd($result);
+}
+
+
+
+
+
+

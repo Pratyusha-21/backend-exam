@@ -1,0 +1,5 @@
+name: Address of Customers
+type: module
+description: Adds an address field to the register form
+package: Custom Module
+core_version_requirement: ^9 || ^10

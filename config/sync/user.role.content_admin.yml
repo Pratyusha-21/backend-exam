@@ -1,0 +1,14 @@
+uuid: 4049be48-82e3-408b-896c-079cebd9825a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.products
+  module:
+    - node
+id: content_admin
+label: 'Content Admin'
+weight: 5
+is_admin: null
+permissions:
+  - 'create products content'
